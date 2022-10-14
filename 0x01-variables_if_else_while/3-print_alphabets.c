@@ -1,26 +1,22 @@
-i#include <stdio.h>
-#include <stdlib.h>
+
+
+#include <stdio.h>
 /**
- * main - entry point
- * Description: print alphabet in lowercase and uppercase
+ * main - print if the lowercase and uppercase alphabet
+ * Description: using the main function
  * Return: 0
  */
-
 int main(void)
 {
-	char c = 'a';
-
-	while (c <= 'z')
-	{
-		putchar(c);
-		c++;
-	}
-	c = 'A';
-	while (c <= 'Z')
-	{
-		putchar(c);
-		c++;
-	}
-	putchar('\n');
-	return (0);
+char ch;
+for (ch = 'a' ; ch <= 'z' ; ch++)
+{
+	putchar(ch);
+}
+for (ch = 'A' ; ch <= 'Z' ; ch++)
+{
+	putchar(ch);
+}
+putchar('\n');
+return (0);
 }
