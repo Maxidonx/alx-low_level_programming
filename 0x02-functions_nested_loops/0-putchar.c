@@ -1,18 +1,20 @@
-void printnumber(int n)
+#include "main.h"
+
+/**
+ * main -  Write a program that prints _putchar, followed by a new line.
+ * Return: Always 0 (Success)
+ */
+
+int main(void)
 {
+	int i = 0;
+	char p[] = "_putchar";
 
-    if (n < 0) {
-        putchar('-');
-        n = -n;
-    }
-
-    if (n == 0)
-        putchar('0');
-
-    if (n/10)
-        printnumber(n/10);
-
-    putchar(n%10 + '0');
-    
-    return 0;
+	while (i < 8)
+	{
+		_putchar(p[i]);
+		i += 1;
+	}
+	_putchar('\n');
+	return (0);
 }
